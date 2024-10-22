@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+}
+.calculatrice{
+    width: 21.8rem;
+    height: 38.75rem;
+    border: 0.1rem red solid;
+    background-color: rgb(248, 100, 41);
+    border-radius: 0.2rem;
+}
+.screen-calculator{
+    width: 21rem;
+    height: 10rem;
+    border: 0.1rem rgb(53, 43, 43) solid;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(252, 250, 249);
+    display: flex;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 15px;
+}
+.touch-calculator{
+ display: grid;
+ grid-template-columns: repeat(4,5rem);
+ grid-template-rows: repeat(5,5rem);
+ grid-gap: 0.5rem;
+}
+.button{
+    font-size: 1.5rem;
+}
+.button-egal{
+    width: 10.5rem;
+}
