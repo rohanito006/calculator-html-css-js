@@ -1,18 +1,22 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: cadetblue;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 .calculatrice{
-    width: 21.8rem;
-    height: 38.75rem;
+    width: 21rem;
+    height: 37rem;
     border: 0.1rem red solid;
-    background-color: rgb(248, 100, 41);
+    background-color: rgb(10, 10, 10);
     border-radius: 0.2rem;
+    box-shadow: 0 0.5rem black;
+    border: none;
+    padding: 15px;
+    font-weight: 700;
 }
 .screen-calculator{
-    width: 21rem;
-    height: 10rem;
+    width: 20rem;
+    height: 9.4rem;
     border: 0.1rem rgb(53, 43, 43) solid;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -20,17 +24,29 @@ body{
     display: flex;
     align-items: flex-end;
     padding: 5px;
-    font-size: 15px;
+    font-size: 2em;
 }
 .touch-calculator{
  display: grid;
- grid-template-columns: repeat(4,5rem);
- grid-template-rows: repeat(5,5rem);
+ grid-template-columns: repeat(4,4.7rem);
+ grid-template-rows: repeat(5,4.7rem);
  grid-gap: 0.5rem;
 }
 .button{
-    font-size: 1.5rem;
+    background-color: #f8f8f8;
+    font-size: 2rem;
+    border-radius: 0.9rem;
+
+    border: none;
 }
-.button-egal{
-    width: 10.5rem;
+.button:active{
+    box-shadow: 0 0.2rem #f8f8f8;
+    transform:translateY(0.02rem);
+}
+.button[data-key='13']{
+    grid-column: span 2;
+    background-color: #36e700;
+}
+.button[data-key='8']{
+   background-color: #ff9900;
 }
